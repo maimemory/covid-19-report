@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p {
+    font-size: 30px;
+    font-family: 'Kanit', sans-serif;
+}
+
+.value {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    background-color: rgb(189, 0, 0);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.value-newdeath {
+    background-color: rgb(0, 0, 0);
+}
