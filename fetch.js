@@ -8,7 +8,11 @@ $(document).ready(function () {
       console.log(data);
       const newCases = JSON.stringify(data.NewConfirmed);
       const newDeaths = JSON.stringify(data.NewDeaths);
+      const totalCases = JSON.stringify(data.Confirmed);
+      const totalDeaths = JSON.stringify(data.Deaths);
       $("#newCase").text(newCases);
       $("#newDeath").text(newDeaths);
+      $("#totalCase").text(totalCases);
+      $("#totalDeath").text(totalDeaths);
     });
 });
