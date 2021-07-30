@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>รายงานผล Covid-19</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="toggle-switch.css">
 </head>
 
 <body>
@@ -26,6 +27,17 @@
         <div class="flex-container">
             <p>จำนวนผู้เสียชีวิตสะสม</p>
             <div id="totalDeath" class="value value-totaldeath"></div>
+        </div>
+        <div class="flex-container switch-container">
+            <p>Dark Mode</p>
+            <label class="switch">
+                <input id="toggle" type="checkbox" checked onclick="darkMode()">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="flex-container">
+            <p class="date-text">อัพเดตข้อมูลล่าสุด</p>
+            <p id="updateDate" class="date-data"></p>
         </div>
 
     </div>

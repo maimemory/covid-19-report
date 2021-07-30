@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 
+body {
+    background-color: rgb(32, 32, 32);
+    color: white;
+}
+
 .content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -12,6 +17,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.switch-container {
+    justify-content: center;
+}
+
+.switch-container>p {
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 p {
@@ -28,6 +42,7 @@ p {
     border-radius: 10px;
     width: 300px;
     text-align: center;
+    box-shadow: 0px 0px 5px rgb(220, 220, 220);
 }
 
 .value-newdeath {
@@ -42,8 +57,36 @@ p {
     background-color: rgb(0, 0, 0);
 }
 
-@media screen and (max-width: 1200px) {
+.date-data {
+    margin-left: 30%;
+    margin-top: 0;
+}
+
+.date-text {
+    margin-left: 30%;
+    margin-bottom: 0;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 840px) {
     .content {
         grid-template-columns: 1fr;
     }
+
+    .date-data {
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .date-text {
+        margin-left: 0;
+        margin-bottom: 0;
+        margin-top: 50px;
+    }
+
+    .switch-container>p {
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
 }
