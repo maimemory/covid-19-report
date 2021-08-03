@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  fetch("https://covid19.th-stat.com/json/covid19v2/getTodayCases.json")
+  fetch("https://node-js-server-covid-19-report.herokuapp.com")
     .then((result) => {
       console.log(result);
       return result.json();
